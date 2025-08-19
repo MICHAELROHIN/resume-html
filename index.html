@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Rohin D A - Resume</title>
-    <!-- Basic CSS for styling -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,25 +12,74 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            background-color: #f4f4f4;
             line-height: 1.6;
+            background-image: url('image.png');
+            background: linear-gradient(45deg, #f0f4f8, #d9e2ec, #e6f3ff);
+            background-size: 200% 200%;
+            animation: gradientFlow 10s ease infinite;
+            position: relative;
+            overflow: visible;
         }
+
+        
+        section, header, footer {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.9); 
+        }
+
         header {
             text-align: center;
             padding: 20px;
-            background-color: #fff;
+            background: linear-gradient(135deg, #D4AF37 0%, #C0C0C0 100%);
             border-bottom: 2px solid #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px); 
+            -webkit-backdrop-filter: blur(5px); 
+            border-radius: 10px; 
         }
         img {
-            max-width: 150px;
-            border-radius: 55%;
-            border: 2px solid #333;
+            max-width: 120px;
+            border-radius: 50%; 
+            border: 1px solid #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         section {
             margin: 20px 0;
-            background-color: #fff;
             padding: 15px;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        section:nth-child(2) { 
+            background-color: #e6f3ff; 
+        }
+        section:nth-child(3) {
+            background-color: #f9e6e6;
+        }
+        section:nth-child(4) {
+            background-color: #e6ffe6; 
+        }
+        section:nth-child(5) { 
+            background-color: #fff3e6; 
+        }
+        section:nth-child(6) {
+            background-color: #e6e6ff; 
+        }
+        section:nth-child(7) {
+            background-color: #f0e6ff; 
+        }
+        section:nth-child(8) {
+            background-color: #e6fff0; 
+        }
+        section:nth-child(9) { 
+            background-color: #fff0e6; 
+        }
+        section:nth-child(10) { 
+            background-color: #e6f0ff; 
         }
         table {
             width: 100%;
@@ -55,6 +103,7 @@
             background-color: #fff;
             border-top: 2px solid #333;
             margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
         a {
             color: #007BFF;
@@ -90,14 +139,13 @@
     </style>
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <img src="michael.jpg" alt="Michael Rohin D A Profile Picture">
         <h1>MICHAEL ROHIN D A</h1>
         <h2>M.TECH - COMPUTER SCIENCE AND ENGINEERING</h2>
     </header>
 
-    <!-- Contact Section -->
     <section>
         <h3>CONTACT</h3>
         <p><strong>Phone:</strong> +91 9787733373</p>
@@ -107,7 +155,6 @@
         <p><strong>GitHub:</strong> <a href="https://github.com/michaelrohin" target="_blank">github.com/michaelrohin</a></p>
     </section>
 
-    <!-- Profile Section -->
     <section>
         <h3>ABOUT ME</h3>
         <p>
@@ -116,7 +163,6 @@
         </p>
     </section>
 
-    <!-- Soft Skills Section -->
     <section>
         <h3>SOFT SKILLS</h3>
         <ul>
@@ -126,7 +172,6 @@
         </ul>
     </section>
 
-
     <section>
         <h3>TECH SKILLS</h3>
         <ul>
@@ -134,7 +179,6 @@
             <li>App Development</li>
         </ul>
     </section>
-
 
     <section>
         <h3>LANGUAGES</h3>
@@ -176,7 +220,6 @@
         </table>
     </section>
 
-   
     <section>
         <h3>PROJECTS</h3>
         <ul>
@@ -192,7 +235,6 @@
         </ul>
     </section>
 
-    
     <section>
         <h3>INTERNSHIP</h3>
         <p><strong>Genik Technologies Pvt. Ltd., Chennai - Intern</strong> (JUN 2025 - JUL 2025)
@@ -203,7 +245,6 @@
         </p>
     </section>
 
-   
     <section>
         <h3>CONTACT ME</h3>
         <form action="/submit" method="post">
@@ -220,7 +261,6 @@
         </form>
     </section>
 
-   
     <footer>
         <p>&copy; 2025 Michael Rohin D A. All rights reserved.</p>
     </footer>
